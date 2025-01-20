@@ -11,9 +11,7 @@ def hello_world():
     fontawesome_css1 = url_for("flask-assets.fontawesome", assetpath="css/all.min.css")
     fontawesome_css2 = url_for("flask-assets.fontawesome", assetpath="css/solid.css")
     bootstrap_css = url_for("flask-assets.bootstrap", assetpath="css/bootstrap.min.css")
-    bootstrap_js = url_for(
-        "flask-assets.bootstrap", assetpath="js/bootstrap.bundle.min.js"
-    )
+    bootstrap_js = url_for("flask-assets.bootstrap", assetpath="js/bootstrap.bundle.min.js")
     return f"""
 <!doctype html>
 <html lang="en">
