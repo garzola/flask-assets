@@ -1,9 +1,8 @@
-![version](https://img.shields.io/badge/version-0.2.0-blue)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/garzola/flask-assets)
-![Coverage Status](./reports/coverage/coverage-badge.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/garzola/flask-assets)
+![version](https://img.shields.io/badge/version-0.3.0-blue)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
-
+![GitHub last commit](https://img.shields.io/github/last-commit/garzola/flask-assets)
+![Coverage Status](./reports/coverage/coverage-badge.svg)
+<!-- ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/garzola/flask-assets) -->
 <!-- ![GitHub Release Date](https://img.shields.io/github/release-date/garzola/flask-assets) -->
 <!-- ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/garzola/flask-assets/total) -->
 
