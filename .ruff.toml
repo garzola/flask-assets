@@ -1,0 +1,47 @@
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "N", # pep-8 naming
+    #"D",     # pydocstyle
+    "F",     # pyflakes
+    "UP",    # pyupgrade
+    "ASYNC", # asyncio
+    "FBT",   # flake8-boolean-trap
+    #"COM",   # flake8-commas
+    "C4",  # flake8-comprehensions
+    "DTZ", # flake8-datetimez
+    "INP", # flake8-no-pep420
+    "PIE", # flake8-pie
+    "T20", # flake8-print
+    "PYI", # flake8-pyi
+    "PT",  # flake8-pytest-style
+    "RET", # flake8-return
+    "SIM", # flake8-simplify
+    "PTH", # flake8-use-pathlib
+    "B",   # flake8-bugbear
+    #"FURB",  # refurb (preview)
+    "RUF", # ruff
+    #"LOG",   # flake8-logging (preview)
+    "PERF", # perflint
+    "FLY",  # flynt
+    "TRY",  # tryceratops
+    "PL",   # Pylint
+]
+ignore = [
+    "TRY003",  # long exception messages are fine
+    "PLR0913", # function parameter limits
+    "E501",    # line too long - formatting check will ensure we do the best we can - lines may still be too long
+    "PLC0414", # `from x import y as y` can be used in __init__.py
+    "PT023",   # ok to use pytest marks without trailing parens
+    "E731",    # if assigning lambdas is wrong I don't want to be right
+]
+
+[lint.per-file-ignores]
+"../*/tests/**" = [
+    # allow magic value comparisons in tests
+    "PLR2004",
+]
