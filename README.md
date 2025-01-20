@@ -38,12 +38,12 @@ app.register_blueprint(flask_assets_blueprint)
 
 @app.route("/")
 def hello_world():
-    htmx = url_for("flask-assets.htmx", assetpath="htmx.min.js")
-    fontawesome_css1 = url_for("flask-assets.fontawesome", assetpath="css/all.min.css")
-    fontawesome_css2 = url_for("flask-assets.fontawesome", assetpath="css/solid.css")
-    bootstrap_css = url_for("flask-assets.bootstrap", assetpath="css/bootstrap.min.css")
-    bootstrap_js = url_for("flask-assets.bootstrap", assetpath="js/bootstrap.bundle.min.js")
-    tom_select_js = url_for("flask-assets.tom-select", assetpath="tom-select.complete.js")
+    htmx = url_for("flask-assets.htmx", asset="htmx.min.js")
+    fontawesome_css1 = url_for("flask-assets.fontawesome", asset="css/all.min.css")
+    fontawesome_css2 = url_for("flask-assets.fontawesome", asset="css/solid.css")
+    bootstrap_css = url_for("flask-assets.bootstrap", asset="css/bootstrap.min.css")
+    bootstrap_js = url_for("flask-assets.bootstrap", asset="js/bootstrap.bundle.min.js")
+    tom_select_js = url_for("flask-assets.tom-select", asset="tom-select.complete.js")
     return f"""
 <!doctype html>
 <html lang="en">
@@ -71,28 +71,28 @@ The code snippet is not located within the flask-assets package.  You can find t
 You can find information about htmx at [https://htmx.org](https://htmx.org)
 
 ```python
-url_for("flask-assets.htmx", assetpath="htmx.min.js")
+url_for("flask-assets.htmx", asset="htmx.min.js")
 ```
 
 ## Linking to Fontawesome files
 You can find information about fontawesome at [https://fontawesome.com](https://fontawesome.com)
 
 ```python
-url_for("flask-assets.fontawesome", assetpath="css/all.min.css")
-url_for("flask-assets.fontawesome", assetpath="css/solid.css")
+url_for("flask-assets.fontawesome", asset="css/all.min.css")
+url_for("flask-assets.fontawesome", asset="css/solid.css")
 ```
 
 ## Linking to Bootstrap files
 You can find information about bootstrap at [getbootstrap.com](https://getbootstrap.com)
 
 ```python
-url_for("flask-assets.bootstrap", assetpath="css/bootstrap.min.css")
-url_for("flask-assets.bootstrap", assetpath="js/bootstrap.bundle.min.js")
+url_for("flask-assets.bootstrap", asset="css/bootstrap.min.css")
+url_for("flask-assets.bootstrap", asset="js/bootstrap.bundle.min.js")
 ```
 
 ## Linking to tom-select.js files
 You can find information about tom-select.js at [tom-select.js.org](https://tom-select.js.org)
 
 ```python
-url_for("flask-assets.tom-select", assetpath="tom-select.complete.js")
+url_for("flask-assets.tom-select", asset="tom-select.complete.js")
 ```
