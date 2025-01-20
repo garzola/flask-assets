@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flask-assets"
-version = "0.1.0"
+version = "0.2.0"
 description = "A convenient way to add bootstrap, htmx, font awesome, and tom-select to your Flask app."
 authors = ["Gustavo Arzola <gustavo@xcode.com>"]
 readme = "README.md"
