@@ -1,4 +1,4 @@
-![version](https://img.shields.io/badge/version-0.3.0-blue)
+![version](https://img.shields.io/badge/version-0.4.0-blue)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 ![GitHub last commit](https://img.shields.io/github/last-commit/garzola/flask-assets)
 ![Coverage Status](./reports/coverage/coverage-badge.svg)
